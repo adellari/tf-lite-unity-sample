@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.tfliteunitysample.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\addyi\\Documents\\GitHub\\tf-lite-unity-sample\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "tf-lite-unity-sample [Testing]"
+        }
+      }
+    }
+  ]
+}

@@ -384,7 +384,7 @@ Canvas:
   m_GameObject: {fileID: 1051232094}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 32141216}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -404,8 +404,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1051232094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.14297974, y: 0.14297974, z: 0.14297974}
   m_Children:
   - {fileID: 2074584277}
   - {fileID: 1121692062}
@@ -415,9 +415,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 1}
+  m_SizeDelta: {x: 1443.6583, y: 807.5973}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1121692061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -570,6 +570,8 @@ GameObject:
   - component: {fileID: 1453601107}
   - component: {fileID: 1453601108}
   - component: {fileID: 1453601106}
+  - component: {fileID: 1453601109}
+  - component: {fileID: 1453601110}
   m_Layer: 0
   m_Name: SSD Sample
   m_TagString: Untagged
@@ -584,7 +586,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453601105}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fb4138b830554fb3998a569eb701fb7, type: 3}
   m_Name: 
@@ -592,7 +594,7 @@ MonoBehaviour:
   options:
     modelPath: coco_ssd_mobilenet_quant.tflite
     aspectMode: 1
-    accelerator: 4
+    accelerator: 0
   frameContainer: {fileID: 2074584280}
   framePrefab: {fileID: 5133934790876113832, guid: 717c89ea2a05f4537b007f12d6357590,
     type: 3}
@@ -619,7 +621,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453601105}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f81f0d43e2d14fbbb064a205095507c, type: 3}
   m_Name: 
@@ -627,8 +629,8 @@ MonoBehaviour:
   editorCameraName: HD Webcam
   preferKind: 1
   isFrontFacing: 0
-  requestSize: {x: 1280, y: 720}
-  requestFps: 30
+  requestSize: {x: 1840, y: 1224}
+  requestFps: 15
   OnTextureUpdate:
     m_PersistentCalls:
       m_Calls:
@@ -643,6 +645,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1453601109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453601105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7302ab9d60698c74ca457d1ca9f498a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onTextureUpdate:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1453601110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453601105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2f90e3578cf9f43aa584e319933c43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  options:
+    modelPath: coco_ssd_mobilenet_quant.tflite
+    aspectMode: 1
+    accelerator: 0
+  frameContainer: {fileID: 2074584280}
+  framePrefab: {fileID: 5133934790876113832, guid: 717c89ea2a05f4537b007f12d6357590,
+    type: 3}
+  scoreThreshold: 0.55
+  labelMap: {fileID: 4900000, guid: bae4ee124cc4849e589f4cd1aa62e7db, type: 3}
 --- !u!1 &2074584276
 GameObject:
   m_ObjectHideFlags: 0
