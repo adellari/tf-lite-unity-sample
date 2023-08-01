@@ -539,7 +539,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1453601108}
+      objectReference: {fileID: 0}
     - target: {fileID: 173531016972836179, guid: a20533af9a9a94af494156c17e85a9e8,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -553,13 +553,7 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1121692061}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1328333883 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7719925103924872094, guid: c3ad31ccc59b04ac782aaabae2b9706b,
-    type: 3}
-  m_PrefabInstance: {fileID: 7719925102837286821}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1453601105
+--- !u!1 &1125305216
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -567,26 +561,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1453601107}
-  - component: {fileID: 1453601108}
-  - component: {fileID: 1453601106}
-  - component: {fileID: 1453601109}
-  - component: {fileID: 1453601110}
+  - component: {fileID: 1125305219}
+  - component: {fileID: 1125305218}
+  - component: {fileID: 1125305217}
   m_Layer: 0
-  m_Name: SSD Sample
+  m_Name: Cam SSD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1453601106
+--- !u!114 &1125305217
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453601105}
-  m_Enabled: 0
+  m_GameObject: {fileID: 1125305216}
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fb4138b830554fb3998a569eb701fb7, type: 3}
   m_Name: 
@@ -594,34 +586,20 @@ MonoBehaviour:
   options:
     modelPath: coco_ssd_mobilenet_quant.tflite
     aspectMode: 1
-    accelerator: 0
+    accelerator: 4
   frameContainer: {fileID: 2074584280}
   framePrefab: {fileID: 5133934790876113832, guid: 717c89ea2a05f4537b007f12d6357590,
     type: 3}
   scoreThreshold: 0.5
   labelMap: {fileID: 4900000, guid: bae4ee124cc4849e589f4cd1aa62e7db, type: 3}
---- !u!4 &1453601107
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453601105}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1453601108
+--- !u!114 &1125305218
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453601105}
-  m_Enabled: 0
+  m_GameObject: {fileID: 1125305216}
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f81f0d43e2d14fbbb064a205095507c, type: 3}
   m_Name: 
@@ -645,6 +623,58 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!4 &1125305219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125305216}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &1328333883 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7719925103924872094, guid: c3ad31ccc59b04ac782aaabae2b9706b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7719925102837286821}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1453601105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1453601107}
+  - component: {fileID: 1453601109}
+  - component: {fileID: 1453601110}
+  m_Layer: 0
+  m_Name: VR SSD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1453601107
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453601105}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1453601109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,7 +689,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onTextureUpdate:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 32141218}
+        m_MethodName: SetTexture
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1453601110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,7 +716,7 @@ MonoBehaviour:
   options:
     modelPath: coco_ssd_mobilenet_quant.tflite
     aspectMode: 1
-    accelerator: 0
+    accelerator: 4
   frameContainer: {fileID: 2074584280}
   framePrefab: {fileID: 5133934790876113832, guid: 717c89ea2a05f4537b007f12d6357590,
     type: 3}
