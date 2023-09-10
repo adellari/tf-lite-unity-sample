@@ -10,7 +10,7 @@
   ],
   "dependencies": {
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.3.1",
-    "com.nianticlabs.lightship": "file:/Users/addy/Downloads/ardk-upm-3.0.0-beta.3.tgz",
+    "com.nianticlabs.lightship": "file:/Users/lenam/Downloads/ardk-upm-3.0.0-beta.3.tgz",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.ext.nunit": "1.0.6",
     "com.unity.ide.visualstudio": "2.0.16",
