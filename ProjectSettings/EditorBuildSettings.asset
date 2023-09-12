@@ -51,11 +51,11 @@ EditorBuildSettings:
     path: Assets/Samples/SelfieSegmentation/SelfieSegmentation.unity
     guid: 3faed22ad2fae4961aa041fdd414f617
   - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
     path: Assets/Custom/MobileSSD.unity
     guid: 1b628be9d68024eb99573278035396b2
+  - enabled: 1
+    path: Assets/Custom/SkySegmentation.unity
+    guid: 05405bf8407194d0b99ce17be648cd49
   m_configObjects:
     Niantic.Lightship.AR.LightshipSettings: {fileID: 11400000, guid: b2bef5f50a5d44b83a537c4e9ca41389,
       type: 2}

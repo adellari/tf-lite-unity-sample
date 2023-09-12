@@ -10,6 +10,8 @@ using Niantic.Lightship.AR.ARFoundation;
 public class SemanticSky : MonoBehaviour
 {
     public ARSemanticSegmentationManager _segManager;
+    private Texture _segTexture;
+
     // Start is called before the first frame update
     void OnEnable()
     {
